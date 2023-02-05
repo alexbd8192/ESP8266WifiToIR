@@ -6,7 +6,7 @@ ESP6266
 Fil micro USB
 Transfo USB 1A
 Transistor (J'ai utilise un 2N3904 mais dautres peuvent faire l'affaire)
-IR Blaster
+IR Emitter (de Control4 dans mon cas...)
 Puisque le transistor peux laisser passer un courant de 200ma, jai ajouté une diode de 27k pour le limiter a 59 en supposant que la led consomme environ 1.7v afin de protéger le circuit.
 Plus la valeur de resistance est haute, moin le IR capte loin
 Je me suis fié sur un post reddit pour déterminer la bonne valeur:
