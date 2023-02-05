@@ -34,6 +34,9 @@ Logiciel:
 - Logiciel pour convertir les signaux IR (au besoin):
 - http://www.harctoolbox.org/downloads/index.html#Current+software
 
+Si besoin d'ajuster le format des signaux IR dans ESPhome:
+https://esphome.io/components/remote_transmitter.html
+
 Remarque:
 attention de mettre le bon domaine local pour que esphome retrouve le module sur le réseau, dans mon cas local.lan
 
