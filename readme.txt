@@ -9,8 +9,8 @@ Materiel:
 - IR Emitter (de Control4 dans mon cas...)
 
 Protection du circuit:
-- Puisque le transistor peux laisser passer un courant de 200ma, jai ajouté une diode de 27k pour le limiter a 59 en supposant que la led consomme environ 1.7v afin de protéger le circuit.
-Plus la valeur de resistance est haute, moin le IR capte loin
+- Puisque le transistor peux laisser passer un courant de 200ma, jai ajouté une diode de 27ohm pour le limiter a 59ma en supposant que la led consomme environ 1.7v afin de protéger le circuit. Cette LED en partculier blink rouge en plus de IR donc j'ai choisis une valeur de 1.7v, ce qui est plus haut que le 1.2v du spectre infrarouge seulement
+Plus la valeur de resistance est haute, moin le IR capte loins.
 Je me suis fié sur un post reddit pour déterminer la bonne valeur:
 
 	They typically have something like 10-50 ohms in series with one or two parallel LEDs and a driver transistor or MOSFET.
