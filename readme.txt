@@ -2,7 +2,7 @@ But:
 Créer une manette IR controllé via Wifi à partir de Home Assistant.
 
 Materiel:
-- ESP6266 (Parait que ESP32 est mieux car le clock serait plsu précis..)
+- ESP8266 (Parait que ESP32 est mieux car le clock serait plsu précis..)
 - Fil micro USB
 - Transfo USB 1A
 - Transistor (J'ai utilise un 2N3904 mais dautres peuvent faire l'affaire)
