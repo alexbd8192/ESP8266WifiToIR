@@ -1,13 +1,15 @@
-Logiciel pour convertir les signaux IR:
-http://www.harctoolbox.org/downloads/index.html#Current+software
+But:
+Créer une manette IR controllé via Wifi à partir de Home Assistant.
 
 Materiel:
-ESP6266
-Fil micro USB
-Transfo USB 1A
-Transistor (J'ai utilise un 2N3904 mais dautres peuvent faire l'affaire)
-IR Emitter (de Control4 dans mon cas...)
-Puisque le transistor peux laisser passer un courant de 200ma, jai ajouté une diode de 27k pour le limiter a 59 en supposant que la led consomme environ 1.7v afin de protéger le circuit.
+- ESP6266 (Parait que ESP32 est mieux car le clock serait plsu précis..)
+- Fil micro USB
+- Transfo USB 1A
+- Transistor (J'ai utilise un 2N3904 mais dautres peuvent faire l'affaire)
+- IR Emitter (de Control4 dans mon cas...)
+
+Protection du circuit:
+- Puisque le transistor peux laisser passer un courant de 200ma, jai ajouté une diode de 27k pour le limiter a 59 en supposant que la led consomme environ 1.7v afin de protéger le circuit.
 Plus la valeur de resistance est haute, moin le IR capte loin
 Je me suis fié sur un post reddit pour déterminer la bonne valeur:
 
@@ -22,12 +24,15 @@ Je me suis fié sur un post reddit pour déterminer la bonne valeur:
 La résistance à été ajouté entre le l'émetteur du transistor et le ground.
 Calculateur de résistance: https://www.digikey.ca/en/resources/conversion-calculators/conversion-calculator-led-series-resistor
 Quelquechose pour apprendre les codes IR, dans mon cas j<ai utilisé un processeur Control4 mais possible de le faire avec un ESP8266 et un IR receiver.
-J'ai suivi ce projet: https://www.instructables.com/Universal-Remote-Using-ESP8266Wifi-Controlled/
 
+Inspiré de ce projet:
+https://www.instructables.com/Universal-Remote-Using-ESP8266Wifi-Controlled/
 
 Logiciel:
-Esphome
-Home Assistant
+- Esphome (soit docker ou dans les addons HA)
+- Home Assistant
+- Logiciel pour convertir les signaux IR (au besoin):
+- http://www.harctoolbox.org/downloads/index.html#Current+software
 
 Remarque:
 attention de mettre le bon domaine local pour que esphome retrouve le module sur le réseau, dans mon cas local.lan
