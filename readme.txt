@@ -15,7 +15,7 @@ Je me suis fié sur un post reddit pour déterminer la bonne valeur:
 
 	Assuming a 2.5-3V battery voltage (2 AA or AAA) and a 1.2V LED voltage that's maybe 20 to 200mA.
 
-	I had a remote that I extended the range on (for a bedroom remote where the IR light had to bounce to get to the set-top box at the back of the lift), and I did it by replacing the LED with a more efficient type rather than by jacking up the LED current.
+	I had a remote that I extended the range on (for a bedroom remote where the IR light had to bounce to get to the set-top box at the back of the lift), and I 	     did it by replacing the LED with a more efficient type rather than by jacking up the LED current.
 
 	https://electronics.stackexchange.com/questions/432396/how-much-current-is-usually-used-with-ir-transmitting-leds-in-remote-controls
 	
@@ -23,3 +23,14 @@ La résistance à été ajouté entre le l'émetteur du transistor et le ground.
 Calculateur de résistance: https://www.digikey.ca/en/resources/conversion-calculators/conversion-calculator-led-series-resistor
 Quelquechose pour apprendre les codes IR, dans mon cas j<ai utilisé un processeur Control4 mais possible de le faire avec un ESP8266 et un IR receiver.
 J'ai suivi ce projet: https://www.instructables.com/Universal-Remote-Using-ESP8266Wifi-Controlled/
+
+
+Logiciel:
+Esphome
+Home Assistant
+
+Remarque:
+attention de mettre le bon domaine local pour que esphome retrouve le module sur le réseau, dans mon cas local.lan
+
+Une fois ajouté a Home Assistant, il faut ajouter le module et la clef d'encryption.
+Une fois cela fait, HA détecte tout les changement automatiquement.
